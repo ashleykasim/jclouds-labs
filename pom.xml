@@ -39,6 +39,11 @@
 
   <properties>
     <jclouds.version>2.0.0-SNAPSHOT</jclouds.version>
+    <dascode.repository.prefix>http://dascode-nexus.cisco.com:8081/nexus/content</dascode.repository.prefix>
+    <dascode.deploy.release.path>repositories/dascode${dascode.sandbox}-release</dascode.deploy.release.path>
+    <dascode.deploy.release.repository>${dascode.repository.prefix}/${dascode.deploy.release.path}</dascode.deploy.release.repository>
+    <dascode.deploy.snapshot.path>repositories/dascode-snapshots</dascode.deploy.snapshot.path>
+    <dascode.deploy.snapshot.repository>${dascode.repository.prefix}/${dascode.deploy.snapshot.path}</dascode.deploy.snapshot.repository>
   </properties>
 
   <repositories>
@@ -190,5 +195,16 @@
       </build>
     </profile>
   </profiles>
+
+  <distributionManagement>
+    <repository>
+      <id>dascode-release</id>
+      <url>${dascode.deploy.release.repository}</url>
+    </repository>
+    <snapshotRepository>
+      <id>dascode-snapshots</id>
+      <url>${dascode.deploy.snapshot.repository}</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
 

@@ -56,7 +56,4 @@ echo "(export MVN_OPTIONS=\"$MVN_OPTIONS\"; export MVN_GOAL=\"$MVN_GOAL\"; $PRJ/
 set -x
 
 cd $PRJ
-source release-pre.incl.sh
-env|sort
-
 $MVN $MVN_OPTIONS $MVN_GOAL $*
