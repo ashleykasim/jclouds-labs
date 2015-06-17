@@ -1,7 +1,11 @@
 # use glob syntax.
 syntax: glob
+\#*
+.#*
+*~
+out/
+.ws/
 target/
-test-output/
 bin/
 .settings/
 .classpath
@@ -20,3 +24,5 @@ atlassian-ide-plugin.xml
 *nb-configuration.xml
 *nbactions.xml
 Makefile
+test-output/
+mvn.out*
