@@ -46,10 +46,8 @@
             org.jclouds.vsphere*;version="${project.version}"
         </jclouds.osgi.export>
         <jclouds.osgi.import>
-            org.jclouds.compute.internal;version="${project.version}",
-            org.jclouds.rest.internal;version="${project.version}",
             org.jclouds*;version="${project.version}",
-            com.jcraft.jzlib*;version="[1.1,2)";resolution:=optional,
+            org.jclouds*;version="${project.version}",
             *
         </jclouds.osgi.import>
     </properties>
