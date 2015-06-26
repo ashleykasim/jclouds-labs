@@ -47,7 +47,6 @@
         </jclouds.osgi.export>
         <jclouds.osgi.import>
             org.jclouds*;version="${project.version}",
-            org.jclouds*;version="${project.version}",
             *
         </jclouds.osgi.import>
     </properties>
