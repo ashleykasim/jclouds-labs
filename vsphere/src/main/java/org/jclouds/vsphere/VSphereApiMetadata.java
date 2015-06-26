@@ -57,9 +57,6 @@ public class VSphereApiMetadata extends BaseHttpApiMetadata<VSphereApi> {
       properties.setProperty(PROPERTY_SESSION_INTERVAL, 300 + "");
       properties.setProperty(VSphereConstants.JCLOUDS_VSPHERE_VM_PASSWORD, "master");
       properties.setProperty(VSphereConstants.CLONING, "full");
-       properties.setProperty("vsphere.identity", "cisco\\dasadm.gen");
-       properties.setProperty("vsphere.credential", "FIXME_CREDENTIAL");
-       properties.setProperty("vsphere.endpoint", "https://rtp10-ppc-vc2.cisco.com/sdk/");
       return properties;
    }
 
